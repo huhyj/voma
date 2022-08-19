@@ -1111,7 +1111,8 @@ h2, h3, h4, h5, h6{
 }
 
 .swiper-container2 p,
-.swiper-container3 p{
+.swiper-container4 p,
+.swiper-container5 p{
     font-size: 11px;
     font-weight: lighter;
     line-height: 140%;

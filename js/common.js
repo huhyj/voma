@@ -177,7 +177,7 @@ $(document).ready(function(){
             }
         });
     
-    // 인터뷰
+    // 작품 상세 정보
         // swiper
         var mySwiper = new Swiper(".swiper-container2", {
             slidesPerView: 1,
@@ -198,22 +198,23 @@ $(document).ready(function(){
         var mySwiper = new Swiper(".swiper-container3", {
             slidesPerView: 1,
             pagination: {
-              el: ".swiper-pagination",
-            },
-        });
-        var mySwiper = new Swiper(".swiper-container4", {
-            slidesPerView: 1,
-            pagination: {
-              el: ".swiper-pagination",
+                el: ".swiper-pagination",
             },
         });
 
-    // 작품 상세 정보
+        var mySwiper2 = new Swiper(".swiper-container4", {
+            slidesPerView: 1,
+            pagination: {
+                el: ".swiper-pagination4",
+            },
+        });
+
+    // 인터뷰
         // swiper
         var mySwiper = new Swiper(".swiper-container5", {
             slidesPerView: 1,
             pagination: {
-            el: ".swiper-pagination",
+                el: ".swiper-pagination",
             },
         });
     
