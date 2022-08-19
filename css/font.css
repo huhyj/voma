@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+/**
+*
+* @author 허 윤 정
+*
+**/
+
+@font-face{
+  font-family:'notoLight';
+  font-style:normal;
+  font-weight:100;
+  src:url('../fonts/NotoSansCJKkr-Light.otf');
+  src:local('※'),
+    url('../fonts//NotoSansCJKkr-Light.otf') format('opentype');
+}
+
+@font-face{
+  font-family:'noto';
+  font-style:normal;
+  font-weight:400;
+  src:url('../fonts/NotoSansCJKkr-Regular.otf');
+  src:local('※'),
+    url('../fonts/NotoSansCJKkr-Regular.otf') format('opentype');
+}
+
+@font-face{
+  font-family:'notoBold';
+  font-style:normal;
+  font-weight:500;
+  src:url('../fonts/NotoSansCJKkr-Bold.otf');
+  src:local('※'),
+    url('../fonts/NotoSansCJKkr-Bold.otf') format('opentype');
+}
+@font-face{
+    font-family:'gilroyLight';
+    font-style:normal;
+    font-weight:100;
+    src:url('../fonts/Gilroy-Light.eot');
+    src:local('※'),
+      url('../fonts/Gilroy-Light.woff') format('woff'),
+      url('../fonts/Gilroy-Light.woff2') format('woff2'),
+      url('../fonts/Gilroy-Light.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'gilroy';
+    font-style:normal;
+    font-weight:400;
+    src:url('../fonts/Gilroy-Regular.eot');
+    src:local('※'),
+      url('../fonts/Gilroy-Regular.woff') format('woff'),
+      url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+      url('../fonts/Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:'gilroyBold';
+    font-style:normal;
+    font-weight:500;
+    src:url('../fonts/Gilroy-Bold.eot');
+    src:local('※'),
+      url('../fonts/Gilroy-Bold.woff') format('woff'),
+      url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+      url('../fonts/Gilroy-Bold.ttf') format('truetype');
+}

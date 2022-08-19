@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VOMA</title>
+    
+        <!-- Jquery -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/swiper.js"></script>
+
+        <!-- CSS -->
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/button.css" rel="stylesheet">
+        <link href="../css/font.css" rel="stylesheet">
+        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <!-- search -->
+        <div class="wrapper">
+
+            <!-- cnt_top -->
+            <section class="cnt_top">
+                <div class="cnt_top_wrap flexCenterAll">
+                    <button type="button" class="btn_back" onclick="goBack();">돌아가기</button>
+                    <h1>구매문의서</h1>
+                </div>
+            </section>
+
+            <!-- cnt -->
+            <section class="cnt2">
+                <div class="container4">
+                    <h2 class="hidden">구매문의서 양식</h2>
+                    <div>
+                        <div class="input_area2 input_area2_on mb24">
+                            <h3>고객명</h3>
+                            <div style="position: relative;">
+                                <input type="text" value="text">
+                                <button type="button" class="btn_remove">삭제</button>
+                            </div>
+                        </div>
+
+                        <div class="input_area2 mb24">
+                            <h3>이메일</h3>
+                            <div style="position: relative;">
+                                <input type="text" value="text">
+                                <button type="button" class="btn_remove">삭제</button>
+                            </div>
+                        </div>
+
+                        <div class="input_area2 mb35">
+                            <h3>연락처</h3>
+                            <div style="position: relative;">
+                                <input type="text" value="010-1234-1234" style="color: #c8cfdc;" readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="mb20">
+                    <ul class="list_ul5">
+                        <li>
+                            <a href="javascript:;">
+                                <div class="pad14 mar0_24 flexLineCenter" style="border-bottom: 1px solid #e5e6eb;">
+                                    <button type="button" class="btn_disagree">동의/비동의</button>
+                                    <div class="agree_tit flexLineCenter">
+                                        <span>[필수] 구매문의 확인 / 동의</span>
+                                        <button type="button" class="btn_down">열기/접기</button>
+                                    </div>
+                                </div>
+                                <div class="agree_box bg_grey">
+                                    <div class="agree_cnt">
+                                        <p>구매문의할 상품의 카피이미지, 상품명을 최종학인하였습니다. 자사 또는 판매자의 상황에 따라 구매가 불가능할 수도 있습니다.</p>
+                                        <p>구매가 불가할 시 연락처나 이메일을 통해 미리 고지해드리겠습니다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="pad14 mar0_24 flexLineCenter" style="border-bottom: 1px solid #e5e6eb;">
+                                    <button type="button" class="btn_disagree">동의/비동의</button>
+                                    <div class="agree_tit flexLineCenter">
+                                        <span>[필수] 개인정보 수집 및 이용동의</span>
+                                        <button type="button" class="btn_down">열기/접기</button>
+                                    </div>
+                                </div>
+                                <div class="agree_box bg_grey">
+                                    <div class="agree_cnt">
+                                        <p>제공받는자 : (주)솔리데오시스템즈</p>
+                                        <p>목적</p>
+                                        <p>1) 판매자와 구매자 사이의 원활한 거래진행</p>
+                                        <p>2)고객상담 및 불만처리</p>
+                                        <p>정보 : 수령인 정보(성명, 이메일, 연락처)</p>
+                                        <p>보마는 통신판매중개자이며 통신판매의 당사자가 아닙니다. 따라서 보마는 상품 거래정보 및 거래에 대하여 책임을 지지 않습니다. 고객님께서는 개인정보 제공에 대하여 동의를 거부하실 수 있으나, 거부 시 상품구매가 어렵습니다.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>           
+            </section>
+
+            <!-- 하단 버튼 -->
+            <div class="footer_btn">
+                <button type="button">
+                    <span>구매문의 보내기</span>
+                </button>
+            </div>
+
+        </div>
+    </body>
+</html>

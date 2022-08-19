@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VOMA</title>
+    
+        <!-- Jquery -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/swiper.js"></script>
+
+        <!-- CSS -->
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/button.css" rel="stylesheet">
+        <link href="../css/font.css" rel="stylesheet">
+        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <!-- search -->
+        <div class="game_wrapper">
+            <div class="position_box_game">
+
+                <!-- cnt_left_top -->
+                <section class="cnt_left_top">
+                    <div class="pad8_12">
+                        <div class="flexSpaceCenter">
+                            <button type="button" class="btn_game_info">갤러리 정보</button>
+                            <button type="button" class="btn_game_camera">캡쳐</button>
+                            <button type="button" class="btn_game_wishlist">위시리스트</button>
+                            <button type="button" class="btn_game_share">공유</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- cnt_right_top -->
+                <section class="cnt_right_top">
+                    <div class="pad8">
+                        <button type="button" class="btn_game_out">나가기</button>
+                    </div>
+                </section>
+
+                <!-- cnt_controler -->
+                <section class="cnt_controler">
+                    <div class="controler control_left">
+                        <div class="controler_wrap">
+                            <button type="button" class="btn_game_moving">방향 이동</button>
+                        </div>
+                    </div>
+                    <div class="controler control_right">
+                        <div class="controler_wrap">
+                            <button type="button" class="btn_game_sight">시야 이동</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- cnt_center_bottom -->
+                <section class="cnt_center_bottom">
+                    <div class="pad8_12">
+                        <div class="flexSpaceCenter">
+                            <div class="center_tool flexSpaceCenter">
+                                <button type="button" class="btn_game_prev">뒤로가기</button>
+                                <button type="button" class="btn_game_play">재생</button>
+                                <button type="button" class="btn_game_stop">정지</button>
+                                <button type="button" class="btn_game_next">앞으로가기</button>
+                            </div>
+                            <div class="flexSpaceCenter" style="flex-grow: 1;">
+                                <div class="game_paging flexLineCenter">
+                                    <span>2</span>
+                                    <span class="divide_line_vertical2"></span>
+                                    <span>13</span>
+                                </div>
+                                <button type="button" class="btn_game_showhide">확대/축소</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- cnt_popup_camera -->
+                <div class="cnt_popup cnt_popup_camera bg_popup_light">
+                    <div class="popup_box">
+                        <div class="cnt_popup_inner flexCenterAll">
+                            <div class="flexColumnCenter">
+                                <img src="../images/icon/game/icon_capture.svg" alt="캡쳐완료"/>
+                                <p class="mt4 cnt_12 white"><strong>캡쳐완료</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cnt_popup_share -->
+                <div class="cnt_popup cnt_popup_share bg_popup_dark">
+                    <div class="popup_box">
+                        <div class="game_tit">
+                            <p>공유</p>
+                            <button type="button" class="btn_close_wt" onclick="popupClose();"></button>
+                        </div>
+                        <div class="cnt_popup_inner2">
+                            <div class="flexCenterAll" style="height: inherit;">
+                                <button type="button" class="">
+                                    <img src="../images/icon/game/icon_share_more.svg" alt="더보기"/>
+                                </button>
+                                <button type="button" class="ml16">
+                                    <img src="../images/icon/game/icon_share_sms.svg" alt="sms"/>
+                                </button>
+                                <button type="button" class="ml16">
+                                    <img src="../images/icon/game/icon_share_email.svg" alt="email"/>
+                                </button>
+                                <button type="button" class="ml16">
+                                    <img src="../images/icon/game/icon_share_line.svg" alt="line"/>
+                                </button>
+                                <button type="button" class="ml16">
+                                    <img src="../images/icon/game/icon_share_kakao.svg" alt="kakao"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cnt_popup_wish -->
+                <div class="cnt_popup cnt_popup_wish bg_popup_dark">
+                    <div class="popup_box">
+                        <div class="game_tit">
+                            <p>위시리스트</p>
+                            <button type="button" class="btn_close_wt" onclick="popupClose();"></button>
+                        </div>
+                        <div class="cnt_popup_inner2">
+                            <div class="container_popup">
+                                <ul class="list_ul4 mb30">
+                                    <li>
+                                        <div class="flexColumn">
+                                            <div class="flexSpaceCenter">
+                                                <img src="../images/sub/game/img_art_70.png" alt="작품">
+                                                <div class="flexColumnSpace ml16 mr10" style="flex-grow: 1;">
+                                                    <div>
+                                                        <p class="cnt_14 mb4"><strong>우리는 어디서 왔고 무엇이며 어디로 가는가</strong></p>
+                                                        <p class="cnt_12">Eyine Kim</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn_remove_list">삭제</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flexColumn">
+                                            <div class="flexSpaceCenter">
+                                                <img src="../images/sub/game/img_art_70.png" alt="작품">
+                                                <div class="flexColumnSpace ml16 mr10" style="flex-grow: 1;">
+                                                    <div>
+                                                        <p class="cnt_14 mb4"><strong>우리는 어디서 왔고 무엇이며 어디로 가는가</strong></p>
+                                                        <p class="cnt_12">Eyine Kim</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn_remove_list">삭제</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="flexColumn">
+                                            <div class="flexSpaceCenter">
+                                                <img src="../images/sub/game/img_art_70.png" alt="작품">
+                                                <div class="flexColumnSpace ml16 mr10" style="flex-grow: 1;">
+                                                    <div>
+                                                        <p class="cnt_14 mb4"><strong>우리는 어디서 왔고 무엇이며 어디로 가는가</strong></p>
+                                                        <p class="cnt_12">Eyine Kim</p>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn_remove_list">삭제</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- cnt_popup_wish -->
+                <div class="cnt_popup cnt_popup_info bg_popup_dark">
+                    <div class="popup_box">
+                        <div class="game_tit">
+                            <button type="button" class="btn_close_wt" onclick="popupClose();"></button>
+                        </div>
+
+                        <div class="cnt_popup_inner3">
+                            <div class="swiper-container swiper-container-popup">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="cnt_border_grey">
+                                            <div class="container flex" style="height: calc(100% - 34px);">
+                                                <div class="cnt_left flexColumnSpace">
+                                                    <div class="img_area"></div>
+                                                    <button type="button" class="btn_bg_blue2">위시리스트 추가</button>
+                                                </div>
+                                                <div class="cnt_right ml24">
+                                                    <div class="detail_wrap">
+                                                        <div class="flexSpaceCenter mb12">
+                                                            <h2 class="grey2">Ben Voirlich</h2>
+                                                        </div>
+                                                        <h3>The Path By The Lake</h3>
+                                                        <div class="mb24 flexLineCenter">
+                                                            <span class="cost_won cnt_game_20 mr6">1,000,000,000</span>
+                                                            <span class="box_border_grey cnt_game_12"><strong>For Sale</strong></span>
+                                                        </div>
+                                                        <div class="flexSpaceCenter">
+                                                            <ul>
+                                                                <li class="cnt_game_12"><strong>2022.00.00.</strong></li>
+                                                                <li class="cnt_game_12"><strong>평면 오일</strong></li>
+                                                                <li class="cnt_game_12"><strong>333.3 x 248.5 cm (h x w)</strong></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">김준수의 작업실에 들어선 순간 '초록'에 물들었다. 작가의 실내 가드닝은, 특별한 도구 없이 오로지 손에 의한 힘의 강약만으로 재료를 느끼며 형태를 완성해내는 '기(vessel)' 작업과 결이 같다.  한 줄 한 줄 가죽을 켜켜이 쌓아올려 완성하는 '느린 작업'은, 씨앗에서부터 발아해 수백 년을 사는 나무와 같이 '자기의 속도'로 성장하는 존재와 같은 성질을 닮았다.</p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">사람과 근원적으로 불가분의 친밀성과 동질성을 지닌 동물의 피부인 가죽을 연구하고 다루는 김준수 작가는 ‘생명력과 온기 담는다’는 주제로 기물을 만든다. 금속공예를 전공하던 중 이탈리아 가죽 워크숍을 경험하며 특히 ‘베지터블 가죽’에 매력을 느낀 작가는 이후 서로 상반되는 물성을 가진 두 재료를 결합한 작업을 시도했다. 재료의 성질도, 다루는 기법도 상이한 두 가지를 혼용해 만드는 작업은 계속 연구 중이다. 좀 더 집중하는 쪽은 가죽과 옻칠을 활용한 ‘레더 볼’ 시리즈의 발전적 작품이다. </p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <div class="detail_box mb24">
+                                                        <div class="flexColumn">
+                                                            <div class="flexLineCenter pb10">
+                                                                <img src="../images/sub/aritst/artist_01.png" alt="작가"/>
+                                                                <div class="flexColumn ml16">
+                                                                    <p class="cnt_game_12 mb4">Jean</p>
+                                                                    <p class="cnt_game_12">Art, like morality, consists of drawing the line somewhere</p>
+                                                                </div>
+                                                            </div>
+                                                            <span>Painting / Contemporary Art / Modern Art</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_border_grey">
+                                            <div class="container flex" style="height: calc(100% - 34px);">
+                                                <div class="cnt_left flexColumnSpace">
+                                                    <div class="img_area"></div>
+                                                    <button type="button" class="btn_bg_blue2">위시리스트 추가</button>
+                                                </div>
+                                                <div class="cnt_right ml24">
+                                                    <div class="detail_wrap">
+                                                        <div class="flexSpaceCenter mb12">
+                                                            <h2 class="grey2">Ben Voirlich</h2>
+                                                        </div>
+                                                        <h3>The Path By The Lake</h3>
+                                                        <div class="mb24 flexLineCenter">
+                                                            <span class="cost_won cnt_game_20 mr6">1,000,000,000</span>
+                                                            <span class="box_border_grey cnt_game_12"><strong>For Sale</strong></span>
+                                                        </div>
+                                                        <div class="flexSpaceCenter">
+                                                            <ul>
+                                                                <li class="cnt_game_12"><strong>2022.00.00.</strong></li>
+                                                                <li class="cnt_game_12"><strong>평면 오일</strong></li>
+                                                                <li class="cnt_game_12"><strong>333.3 x 248.5 cm (h x w)</strong></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">김준수의 작업실에 들어선 순간 '초록'에 물들었다. 작가의 실내 가드닝은, 특별한 도구 없이 오로지 손에 의한 힘의 강약만으로 재료를 느끼며 형태를 완성해내는 '기(vessel)' 작업과 결이 같다.  한 줄 한 줄 가죽을 켜켜이 쌓아올려 완성하는 '느린 작업'은, 씨앗에서부터 발아해 수백 년을 사는 나무와 같이 '자기의 속도'로 성장하는 존재와 같은 성질을 닮았다.</p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">사람과 근원적으로 불가분의 친밀성과 동질성을 지닌 동물의 피부인 가죽을 연구하고 다루는 김준수 작가는 ‘생명력과 온기 담는다’는 주제로 기물을 만든다. 금속공예를 전공하던 중 이탈리아 가죽 워크숍을 경험하며 특히 ‘베지터블 가죽’에 매력을 느낀 작가는 이후 서로 상반되는 물성을 가진 두 재료를 결합한 작업을 시도했다. 재료의 성질도, 다루는 기법도 상이한 두 가지를 혼용해 만드는 작업은 계속 연구 중이다. 좀 더 집중하는 쪽은 가죽과 옻칠을 활용한 ‘레더 볼’ 시리즈의 발전적 작품이다. </p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <div class="detail_box mb24">
+                                                        <div class="flexColumn">
+                                                            <div class="flexLineCenter pb10">
+                                                                <img src="../images/sub/aritst/artist_01.png" alt="작가"/>
+                                                                <div class="flexColumn ml16">
+                                                                    <p class="cnt_game_12 mb4">Jean</p>
+                                                                    <p class="cnt_game_12">Art, like morality, consists of drawing the line somewhere</p>
+                                                                </div>
+                                                            </div>
+                                                            <span>Painting / Contemporary Art / Modern Art</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="cnt_border_grey">
+                                            <div class="container flex" style="height: calc(100% - 34px);">
+                                                <div class="cnt_left flexColumnSpace">
+                                                    <div class="img_area"></div>
+                                                    <button type="button" class="btn_bg_blue2">위시리스트 추가</button>
+                                                </div>
+                                                <div class="cnt_right ml24">
+                                                    <div class="detail_wrap">
+                                                        <div class="flexSpaceCenter mb12">
+                                                            <h2 class="grey2">Ben Voirlich</h2>
+                                                        </div>
+                                                        <h3>The Path By The Lake</h3>
+                                                        <div class="mb24 flexLineCenter">
+                                                            <span class="cost_won cnt_game_20 mr6">1,000,000,000</span>
+                                                            <span class="box_border_grey cnt_game_12"><strong>For Sale</strong></span>
+                                                        </div>
+                                                        <div class="flexSpaceCenter">
+                                                            <ul>
+                                                                <li class="cnt_game_12"><strong>2022.00.00.</strong></li>
+                                                                <li class="cnt_game_12"><strong>평면 오일</strong></li>
+                                                                <li class="cnt_game_12"><strong>333.3 x 248.5 cm (h x w)</strong></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">김준수의 작업실에 들어선 순간 '초록'에 물들었다. 작가의 실내 가드닝은, 특별한 도구 없이 오로지 손에 의한 힘의 강약만으로 재료를 느끼며 형태를 완성해내는 '기(vessel)' 작업과 결이 같다.  한 줄 한 줄 가죽을 켜켜이 쌓아올려 완성하는 '느린 작업'은, 씨앗에서부터 발아해 수백 년을 사는 나무와 같이 '자기의 속도'로 성장하는 존재와 같은 성질을 닮았다.</p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <p class="cnt_game_16">사람과 근원적으로 불가분의 친밀성과 동질성을 지닌 동물의 피부인 가죽을 연구하고 다루는 김준수 작가는 ‘생명력과 온기 담는다’는 주제로 기물을 만든다. 금속공예를 전공하던 중 이탈리아 가죽 워크숍을 경험하며 특히 ‘베지터블 가죽’에 매력을 느낀 작가는 이후 서로 상반되는 물성을 가진 두 재료를 결합한 작업을 시도했다. 재료의 성질도, 다루는 기법도 상이한 두 가지를 혼용해 만드는 작업은 계속 연구 중이다. 좀 더 집중하는 쪽은 가죽과 옻칠을 활용한 ‘레더 볼’ 시리즈의 발전적 작품이다. </p>
+                                                    <span class="cnt_border_grey2"></span>
+                                                    <div class="detail_box mb24">
+                                                        <div class="flexColumn">
+                                                            <div class="flexLineCenter pb10">
+                                                                <img src="../images/sub/aritst/artist_01.png" alt="작가"/>
+                                                                <div class="flexColumn ml16">
+                                                                    <p class="cnt_game_12 mb4">Jean</p>
+                                                                    <p class="cnt_game_12">Art, like morality, consists of drawing the line somewhere</p>
+                                                                </div>
+                                                            </div>
+                                                            <span>Painting / Contemporary Art / Modern Art</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="pagination">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>

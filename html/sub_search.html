@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VOMA</title>
+    
+        <!-- Jquery -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/swiper.js"></script>
+
+        <!-- CSS -->
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/button.css" rel="stylesheet">
+        <link href="../css/font.css" rel="stylesheet">
+        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <!-- search -->
+        <div class="wrapper">
+
+            <!-- cnt_top -->
+            <section class="cnt_top">
+                <div class="cnt_top_wrap flexCenterAll">
+                    <button type="button" class="btn_back" onclick="goBack();">돌아가기</button>
+                    <h1>통합검색</h1>
+                </div>
+            </section>
+
+            <!-- cnt_search -->
+            <section class="cnt_search">
+                <div class="container">
+                    <div class="input_area">
+                        <h2 class="hidden">검색어 입력창</h2>
+                        <input type="text" placeholder="검색어를 입력해주세요.">
+                        <button type="button" class="btn_search_bk">검색</button>
+                        <button type="button" class="btn_remove">삭제</button>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- cnt - 검색전 -->
+            <section class="cnt cnt_search_before">
+                <div class="container3">
+                    <div class="mb60">
+                        <h2>최근 검색어</h2>
+                        <div class="mt12">
+                            <ul class="list_ul">
+                                <li>
+                                    <span>팝아트</span>
+                                    <button type="button" class="btn_remove">삭제</button>
+                                </li>
+                                <li>
+                                    <span>아트토이</span>
+                                    <button type="button" class="btn_remove">삭제</button>
+                                </li>
+                                <li>
+                                    <span>팝아트</span>
+                                    <button type="button" class="btn_remove">삭제</button>
+                                </li>
+                                <li>
+                                    <span>아트토이</span>
+                                    <button type="button" class="btn_remove">삭제</button>
+                                </li>
+                                <li>
+                                    <span>팝아트</span>
+                                    <button type="button" class="btn_remove">삭제</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <h2>베스트</h2>
+                        <div class="mt12">
+                            <div class="flexSpace pt15">
+                                <ul class="list_ul2">
+                                    <li>
+                                        <a href="#none">
+                                            <span>1.</span>
+                                            <span>현대전시</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>2.</span>
+                                            <span>인물화</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>3.</span>
+                                            <span>JH 작가</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>4.</span>
+                                            <span>이용권 구매 이용권 구매22</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>5.</span>
+                                            <span>바로크양식</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="list_ul2">
+                                    <li>
+                                        <a href="#none">
+                                            <span>6.</span>
+                                            <span>유화</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>7.</span>
+                                            <span>Voma</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>8.</span>
+                                            <span>modern art</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>9.</span>
+                                            <span>가구디자인</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <span>10.</span>
+                                            <span>르네상스전</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- cnt - 검색중 -->
+            <section class="cnt cnt_search_ing">
+                <div class="container2 mt12">
+                    <div class="search_ing pb40">
+                        <h2 class="hidden">검색어 입력중</h2>
+                        <ul class="">
+                            <li>
+                                <span><strong>현대</strong></span>
+                            </li>
+                            <li>
+                                <span><strong>현대</strong>전</span>
+                            </li>
+                            <li>
+                                <span><strong>현대</strong>전시</span>
+                            </li>
+                            <li>
+                                <span><strong>현대</strong>에</span>
+                            </li>
+                            <li>
+                                <span><strong>현대</strong>화</span>
+                            </li>
+                            <li>
+                                <span><strong>현대</strong>디자인</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- cnt - 검색결과있음 -->
+            <section class="cnt cnt_search_after">
+                <div class="search_after_tab">
+                    <h2 class="hidden">검색결과있음</h2>
+                    <ul class="">
+                        <li class="on">
+                            <a href="#none">전체</a>
+                        </li>
+                        <li>
+                            <a href="#none">갤러리</a>
+                        </li>
+                        <li>
+                            <a href="#none">작가</a>
+                        </li>
+                        <li>
+                            <a href="#none">작품</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search_after pt40">
+                    <div class="mc_wrap">
+                        <div class="mc_04_wrap">
+                            <div class="mc_tit flexSpaceCenter">
+                                <h3>갤러리</h3>
+                                <button>View all</button>
+                            </div>
+                            <div class="scroll_wrap">
+                                <ul class="scroll_box">
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_01.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>김준수의 식물성 세계</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_02.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>더 오래 머물수 있도록,<br> 현대섬유작가 김태연</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_01.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>김준수의 식물성 세계</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_02.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>더 오래 머물수 있도록,<br> 현대섬유작가 김태연</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mc_wrap">
+                        <div class="mc_04_wrap">
+                            <div class="mc_tit flexSpaceCenter">
+                                <h3>작품</h3>
+                                <button>View all</button>
+                            </div>
+                            <div class="scroll_wrap">
+                                <ul class="scroll_box">
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_01.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>김준수의 식물성 세계</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_02.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>더 오래 머물수 있도록,<br> 현대섬유작가 김태연</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_01.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>김준수의 식물성 세계</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <div>
+                                                <img src="../images/main/main_cnt_04/main_04_02.png" alt="작가"/>
+                                                <p class="cnt_14 mt12 mb4 ellipsis"><strong>더 오래 머물수 있도록,<br> 현대섬유작가 김태연</strong></p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mc_wrap">
+                        <div class="mc_04_wrap">
+                            <div class="mc_tit flexSpaceCenter">
+                                <h3>작가</h3>
+                            </div>
+                            <div class="scroll_wrap">
+                                <div class="nodata_box">
+                                    <img src="../images/icon/icon_file_grey.svg" alt="검색결과없음"/>
+                                    <h4 class="nodata"><span class="blue">'현대'</span>에 대한 검색결과가 없습니다.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- cnt - 검색결과없음 -->
+            <section class="cnt cnt_search_after2">
+                <div class="search_after2">
+                    <div class="nodata_box">
+                        <img src="../images/icon/icon_file_grey.svg" alt="검색결과없음"/>
+                        <h4 class="nodata">검색결과가 없습니다.</h4>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

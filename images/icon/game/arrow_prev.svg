@@ -1,0 +1,17 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#jrsid22jba)">
+        <path d="m21.656 24 9.9 9.9-2.828 2.828L16 23.998l12.728-12.727 2.828 2.828-9.9 9.9z" fill="#fff"/>
+    </g>
+    <defs>
+        <filter id="jrsid22jba" x="0" y="-1" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="1"/>
+            <feGaussianBlur stdDeviation="1"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_914_19298"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_914_19298" result="shape"/>
+        </filter>
+    </defs>
+</svg>

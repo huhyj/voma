@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>VOMA</title>
+    
+        <!-- Jquery -->
+        <script src="../js/jquery-3.4.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="../js/swiper.js"></script>
+
+        <!-- CSS -->
+        <link href="../css/main.css" rel="stylesheet">
+        <link href="../css/button.css" rel="stylesheet">
+        <link href="../css/font.css" rel="stylesheet">
+        <link href="../css/common.css" rel="stylesheet">
+        <link href="../css/reset.css" rel="stylesheet">
+        <link href="../css/swiper.css" rel="stylesheet">
+	</head>
+
+	<body>
+        <!-- search -->
+        <div class="wrapper">
+
+            <!-- cnt_top -->
+            <section class="cnt_top">
+                <div class="cnt_top_wrap flexCenterAll">
+                    <button type="button" class="btn_back" onclick="goBack();">돌아가기</button>
+                    <h1>개인정보 설정</h1>
+                </div>
+            </section>
+
+            <!-- cnt -->
+            <section class="cnt3">
+                <div class="container4">
+                    <h2 class="hidden">개인정보 설정</h2>
+                    <div>
+                        <div class="flexColumnCenter mb20">
+                            <div class="position_box">
+                                <img src="../images/icon/icon_avatar.svg" alt="프로필 사진"/>
+                                <button type="button" class="btn_edit_profile">프로필 사진 변경하기</button>
+                            </div>
+                        </div>
+
+                        <div class="input_area2 input_area2_on mb40">
+                            <h3 class="hidden">닉네임</h3>
+                            <div style="position: relative;">
+                                <input type="text" value="Kim Artvoma">
+                                <button type="button" class="btn_remove">삭제</button>
+                            </div>
+                            <label>* 닉네임 규칙: 1~10 글자의 한글, 영문, 숫자, 기호 조합</label>
+                        </div>
+
+                        <div class="input_area2 input_area2_on mb40">
+                            <h3>해시태그</h3>
+                            <div style="position: relative;">
+                                <input type="text" value="#관람객 #컬렉터 #셀러">
+                                <button type="button" class="btn_remove">삭제</button>
+                            </div>
+                        </div>
+
+                        <div class="input_area2 mb40">
+                            <h3>이메일</h3>
+                            <input type="text" value="Kim@gamil.com" style="color: #c8cfdc;" readonly>
+                        </div>
+
+                        <div class="input_area2 mb14">
+                            <h3>자기소개 입력</h3>
+                            <div class="overChk">
+                                <div class="pr_box mt8">
+                                    <textarea>KIM ARTVOMA님의 예술공간입니다. KIM ARTVOMA님의 예술공간입니다. KIM ARTVOMA님의 예술공간입니다. KIM ARTVOMA님의 예술공간입니다. KIM ARTVOMA님의 예술공간입니다. KIM ARTVOMA님의 예술공간입니다. *150자 입력테스트 </textarea>
+                                </div>
+                                <label>* 150자 내로 입력해주세요(띄어쓰기 포함).</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="btn_line_48 btn_disabled mt20 mb60">수정</button>
+
+                    <div class="">
+                        <ul class="list_ul3 mb60">
+                            <li>
+                                <a href="#none;">로그아웃</a>
+                            </li>
+                            <li>
+                                <a href="#none;">회원탈퇴</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>               
+            </section>
+
+        </div>
+    </body>
+</html>

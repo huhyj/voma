@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/**
+*
+* @author 허 윤 정
+*
+**/
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* intro */
+.intro_wrap{
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(76,131,251,1) 0%, rgba(17,83,228,1) 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.intro_wrap p,
+.login_wrap p{
+    font-size: 14px;
+    font-weight: bold;
+    /* font-family: 'gilroyBold'; */
+    line-height: 140%;
+    color: #fff;
+    /* text-shadow: 2px 1px 2px rgb(0 0 0 / 20%); */
+    margin-top: 13px;
+}
+
+.intro_txt{
+    position: absolute;
+    bottom: 32px;
+}
+
+.intro_txt p{
+    font-size: 14px;
+    font-family: 'gilroyLight';
+    opacity: 0.6;
+    text-shadow: none;
+    margin: 0px;
+}
+
+/* login */
+.login_wrap{
+    width: 100%;
+    height: 100%;
+    background: url('../images/etc/bg_login.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.login_wrap p{
+    color: #051a2e;
+}
+
+.login_type{
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+}

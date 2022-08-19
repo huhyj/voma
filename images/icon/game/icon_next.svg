@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#uhxklat81a)" fill="#fff">
+        <path d="M18.75 20.25a.752.752 0 0 1-.75-.75v-15c0-.412.337-.75.75-.75s.75.338.75.75v15c0 .413-.337.75-.75.75zM5.25 20.25a.745.745 0 0 1-.75-.75v-15c0-.274.146-.525.386-.656a.757.757 0 0 1 .761.018l12 7.5A.759.759 0 0 1 18 12a.759.759 0 0 1-.352.637l-12 7.5a.75.75 0 0 1-.398.113zM6 5.854v12.292L15.836 12 6 5.854z"/>
+    </g>
+    <defs>
+        <filter id="uhxklat81a" x="4.5" y="2.75" width="19" height="20.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dx="2" dy="1"/>
+            <feGaussianBlur stdDeviation="1"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_852_19953"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_852_19953" result="shape"/>
+        </filter>
+    </defs>
+</svg>

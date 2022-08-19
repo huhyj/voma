@@ -1,0 +1,535 @@
+@charset "utf-8";
+
+/**
+*
+* @author 허 윤 정
+*
+**/
+
+/* common */
+.btn_line_48{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-family: 'notoBold';
+    border: 1px solid #c8cfdc;
+    /* background-color: #fff; */
+}
+
+.btn_line_32{
+    width: 96px;
+    height: 32px;
+    font-size: 12px;
+    font-family: 'notoBold';
+    border: 1px solid #c8cfdc;
+    background-color: #fff;
+    margin: 0px;
+}
+
+.btn_line_24{
+    width: 40px;
+    height: 24px;
+    font-size: 12px;
+    font-family: 'notoBold';
+    border: 1px solid #c8cfdc;
+    background-color: #fff;
+    margin: 0px;
+}
+
+.btn_lighter_12{
+    font-size: 12px;
+    font-family: 'notoLight';
+}
+
+.btn_disabled{
+    color: #fff;
+    background-color: #e9ecf1;
+    border: 1px solid #e9ecf1;
+}
+
+.btn_bg_blue{
+    width: auto;
+    font-size: 12px;
+    padding: 7px 8px;
+    color: #fff;
+    background-color: #2563eb;
+}
+
+.btn_bg_blue2{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-family: 'notoBold';
+    color: #fff;
+    background-color: #2563eb;
+    border: none;
+}
+
+
+/* login */
+.login_type button{
+    width: 100%;
+    height: 48px;
+}
+
+.login_type button span{
+    font-size: 14px;
+    font-weight: bold;
+    /* font-family: 'notoBold'; */
+    line-height: 170%;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    padding-left: 36px;
+    display: inline-block;
+}
+
+.btn_kakao{
+    color: #391b1b;
+    background-color: #fae300;
+}
+
+.btn_kakao span{
+    background-image: url('../images/icon/icon_kakao.svg');
+}
+
+.btn_naver{
+    color: #ffffff;
+    background-color: #00c300;
+}
+
+.btn_naver span{
+    background-image: url('../images/icon/icon_naver.svg');
+}
+
+
+/* main */
+.btn_back{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/arrow_left.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    left: 24px;
+}
+
+.btn_back_wt{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/arrow_left_wt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    left: 24px;
+}
+
+.cnt_top .btn_search_bk{
+    width: 26px;
+    height: 26px;
+    top: 15px;
+    right: 19px;
+    padding: 5px;
+    background-size: 16px;
+}
+
+.btn_logo_wt{
+    width: 100%;
+    height: 38px;
+    background-image: url("../images/etc/logo_wt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.header.on .btn_logo_wt{
+    background-image: url("../images/etc/logo_bk.svg");
+}
+
+.btn_search_bk{
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/icon/icon_search.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+}
+
+.btn_search_wt{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_search_wt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.header.on .btn_search_wt{
+    background-image: url("../images/icon/icon_search_bk.svg");
+}
+
+.btn_remove_list{
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_remove_bk.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    text-indent: -9999px;
+    border: 1px solid #051a2e;
+    padding: 4px;
+}
+
+.btn_remove{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/icon/icon_remove_grey.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    text-indent: -9999px;
+    padding: 5px;
+    position: absolute;
+    right: 3px;
+    top: 1px;
+}
+
+.input_area .btn_remove{
+    right: 17px;
+    top: 7px;
+    display: none;
+}
+
+.btn_down{
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.btn_down.change{
+    transform: rotate(180deg);
+}
+
+.btn_disagree{
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_chk_off.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.btn_agree{
+    background-image: url("../images/icon/icon_chk_on.svg");
+}
+
+.btn_edit_profile{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_camera.svg");
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: center;
+    border: 1px solid #c8cfdc;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-indent: -9999px;
+    margin: 10px;
+    position: absolute;
+    right: -9px;
+    bottom: -4px;
+}
+
+.btn_menu{
+    width: 100%;
+    height: 60px;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center 9px;
+}
+
+.btn_menu span{
+    padding-top: 25px;
+    display: inline-block;
+}
+
+.btn_menu.on span{
+    font-weight: bold;
+}
+
+.btn_menu_01{
+    background-image: url("../images/icon/menu_1.svg");
+}
+
+.btn_menu_01.on{
+    background-image: url("../images/icon/menu_1_on.svg");
+}
+
+.btn_menu_02{
+    background-image: url("../images/icon/menu_2.svg");
+}
+
+.btn_menu_02.on{
+    background-image: url("../images/icon/menu_2_on.svg");
+}
+
+.btn_menu_03{
+    background-image: url("../images/icon/menu_3.svg");
+}
+
+.btn_menu_03.on{
+    background-image: url("../images/icon/menu_3_on.svg");
+}
+
+.btn_menu_04{
+    background-image: url("../images/icon/menu_4.svg");
+}
+
+.btn_menu_04.on{
+    background-image: url("../images/icon/menu_4_on.svg");
+}
+
+.btn_share{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_share.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    right: 24px;
+}
+
+.btn_share_wt{
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_share_wt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+    position: absolute;
+    right: 24px;
+}
+
+.btn_setting{
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/icon/icon_settings.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.btn_edit{
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/icon/icon_edit.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    text-indent: -9999px;
+    padding: 5px;
+    position: absolute;
+    right: -5px;
+    top: 7px;
+}
+
+.btn_wishlist{
+    width: 34px;
+    height: 34px;
+    background-image: url("../images/icon/icon_wishlist.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    text-indent: -9999px;
+    padding: 5px;
+    position: absolute;
+    right: 18px;
+}
+
+.btn_heart_off{
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.btn_heart_on{
+    color: #ff334b;
+}
+
+.btn_heart_off::before{
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../images/icon/icon_heart_wt.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+.btn_heart_on::before{
+    background-image: url("../images/icon/icon_heart_red.svg");
+    top: 5px;
+}
+
+.btn_like_off span{
+    position: relative;
+    color: #fff;
+}
+
+.btn_like_off span::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/icon/icon_heart_wt2.svg");
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
+
+.btn_like_on span::before{
+    color: #78efff;
+    background-image: url("../images/icon/icon_heart_blue.svg");
+    background-size: 24px;
+}
+
+
+/* game */
+.cnt_left_top button,
+.cnt_right_top button,
+.cnt_right_top_vertical button,
+.cnt_center_bottom button{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -9999px;
+}
+
+.btn_game_info{
+    background-image: url("../images/icon/game/icon_info_wt.svg");
+}
+.on .btn_game_info{
+    background-image: url("../images/icon/game/icon_info.svg");
+}
+
+.btn_game_camera{
+    background-image: url("../images/icon/game/icon_camera_wt.svg");
+}
+.on .btn_game_camera{
+    background-image: url("../images/icon/game/icon_camera.svg");
+}
+
+.btn_game_wishlist{
+    background-image: url("../images/icon/game/icon_wishlist_wt.svg");
+}
+.on .btn_game_wishlist{
+    background-image: url("../images/icon/game/icon_wishlist.svg");
+}
+
+.btn_game_share{
+    background-image: url("../images/icon/game/icon_share_wt.svg");
+}
+.on .btn_game_share{
+    background-image: url("../images/icon/game/icon_share.svg");
+}
+
+.btn_game_out{
+    background-image: url("../images/icon/game/icon_out_wt.svg");
+}
+.on .btn_game_out{
+    background-image: url("../images/icon/game/icon_out.svg");
+}
+
+.cnt_controler button{
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+}
+
+.btn_game_moving{
+    background-image: url("../images/icon/game/icon_coltrol_left_wt.svg");
+    background-size: 48px;
+}
+.on .btn_game_moving{
+    background-image: url("../images/icon/game/icon_coltrol_left.svg");
+}
+
+.btn_game_sight{
+    background-image: url("../images/icon/game/icon_control_right.svg");
+    background-size: 24px;
+}
+.on .btn_game_sight{
+    background-image: url("../images/icon/game/icon_control_right_wt.svg");
+}
+
+
+.btn_game_prev{
+    background-image: url("../images/icon/game/icon_prev.svg");
+}
+
+.btn_game_play{
+    background-image: url("../images/icon/game/icon_play.svg");
+}
+
+.btn_game_stop{
+    background-image: url("../images/icon/game/icon_stop.svg");
+}
+
+.btn_game_next{
+    background-image: url("../images/icon/game/icon_next.svg");
+}
+
+.btn_game_showhide{
+    background-image: url("../images/icon/game/icon_show.svg");
+}
+
+.btn_game_showhide.hide{
+    background-image: url("../images/icon/game/icon_hide.svg");
+}
+
+.share_btns button{
+    width: 70px;
+    height: 70px;
+}
+
+.btn_close_wt{
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url("../images/icon/game/icon_close.svg");
+    position: absolute;
+    top: 32px;
+    right: 40px;
+}
