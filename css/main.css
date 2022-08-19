@@ -89,6 +89,41 @@
     opacity: 0.2;
 }
 
+.banner .banner_process{
+    width: 100%;
+    height: 4px;
+    border-radius: 0px;
+    background: rgba(5, 26, 46, 0.2);
+    margin: 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.banner .banner_process::after{
+    content: '';
+    display: inline-block;
+    height: 4px;
+    border-radius: 0px;
+    background: #007aff;
+    opacity: 1.0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.banner_01 .banner_process::after{
+    width: 33%;
+}
+
+.banner_02 .banner_process::after{
+    width: 67%;
+}
+
+.banner_03 .banner_process::after{
+    width: 100%;
+}
+
 .pagination .swiper-pagination-bullet-active{
     background: #051a2e;
 }

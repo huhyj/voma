@@ -93,6 +93,7 @@ $(document).ready(function(){
     // swiper
     var mySwiper = new Swiper(".swiper-container1", {
         slidesPerView: 1,
+        effect : 'fade',
         pagination: {
           el: ".swiper-pagination",
         },
