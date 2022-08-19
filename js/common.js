@@ -32,6 +32,10 @@ $(document).ready(function(){
             }
         });
 
+        $(".scroll_container_x").mCustomScrollbar({
+            axis:"x"
+        });
+
         // sub_art_detail
         $(".cnt3.cnt_art").scroll(function(){
             if($(this).scrollTop() > 30){

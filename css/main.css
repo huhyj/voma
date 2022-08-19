@@ -1521,6 +1521,22 @@ h2, h3, h4, h5, h6{
     color: #fff;
 }
 
+.mCSB_scrollTools{
+    opacity: 1.0 !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail{
+    background-color: #143680 !important;
+    border-radius: 0px !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    height: 2px !important;
+    margin: 7px auto !important;
+    background-color: #fff !important;
+    border-radius: 0px !important;
+}
+
 
 /* response */
 /* @media (min-width:768px){
