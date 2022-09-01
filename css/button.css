@@ -532,4 +532,35 @@
     position: absolute;
     top: 32px;
     right: 40px;
+    z-index: 10;
+}
+
+.btn_show_large{
+    font-size: 14px;
+    font-family: 'notoBold';
+    border-radius: 30px;
+    color: #fff;
+    background-color: rgba(5, 26, 46, 0.8);
+    padding: 8px 30px 8px 12px;
+    position: absolute;
+    right: 40px;
+    bottom: 38px;
+    z-index: 10;
+}
+
+.btn_show_large span{
+    position: relative;
+}
+
+.btn_show_large span::after{
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url('../images/icon/arrow_right_wt.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: -20px;
+    top: 2px;
 }

@@ -299,8 +299,9 @@ $(document).ready(function(){
             $(".controler").toggleClass('on');
         });
 
-        // 갤러리 정보(임시)
-        $(".btn_game_info").click(function(){
+        // 갤러리 정보
+        $(".btn_show_large").click(function(){
+            $(".cnt_popup_info").css("z-index","1000");
             $(".cnt_popup_info").show();
         });
 
@@ -321,7 +322,25 @@ $(document).ready(function(){
             $(".cnt_popup_share").show();
         });
 
-        // swiper
+        // 작품 확대(임시)
+        $(".btn_game_out").click(function(){
+            $(".cnt_popup_large").show();
+        });
+
+        // swiper-작품확대
+        var mySwiper = new Swiper(".swiper-container-large", {
+            slidesPerView: 1,
+            loop : true,
+            direction: 'horizontal',
+            observer: true,
+            observeParents: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+        // swiper-작품상세보기
         var mySwiper = new Swiper(".swiper-container-popup", {
             slidesPerView: 1,
             loop : true,
