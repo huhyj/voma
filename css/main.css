@@ -195,6 +195,7 @@
 
 .mc_tit button{
     font-size: 12px;
+    min-width: 45px;
     /* font-family: 'notoLight'; */
 }
 
