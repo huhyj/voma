@@ -113,9 +113,11 @@
 }
 
 .loading{
-	width: 60px;
-	height: 60px;
+	width: 26px;
+	height: 26px;
 	animation: rotate 1s linear infinite;
+	position: absolute;
+	bottom: 0px;
 }
 
 @keyframes rotate {

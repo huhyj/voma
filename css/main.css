@@ -1263,23 +1263,50 @@ h2, h3, h4, h5, h6{
     overflow: auto;
 }
 
+.column_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .columns{
-    column-gap: 15px;
-    column-count: 2;
+    width: calc(50% - 7.5px);
+    margin-bottom: 40px;
 }
 
-.columns figure{
+.columns img{
+    width: calc(50vw - 31.5px);
+    height: calc(50vw - 31.5px);
+}
+
+.columns h2,
+.columns h4,
+.columns h6{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+/* .column_list{
+    clear: both;
+}
+
+.columns:nth-child(odd),
+.columns:nth-child(even){
+    width: calc(50% - 7.5px);
+    margin-bottom: 40px;
+}
+
+.columns:nth-child(odd){
+    float: left;
+}
+
+.columns:nth-child(even){
+    float: right;
+} */
+
+.columns a{
     display: block;
-    margin: 0px;
-    padding-bottom: 40px;
-}
-
-.columns figure a{
-    display: block;
-}
-
-.columns figure img{
-    width: 100%;
 }
 
 
